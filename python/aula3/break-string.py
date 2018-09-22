@@ -8,8 +8,7 @@ headlines = ["Local Bear Eaten by Man",
              "Papperbok Review: Totally Triffic"]
 
 news_ticker = ""
-# write your loop here
-
+# My Answer
 for headline in headlines:
     if len(news_ticker) >= 140:
         break
@@ -20,4 +19,14 @@ for headline in headlines:
         news_ticker += headline + " "
         
 print(len(news_ticker))        
+print(news_ticker)
+
+#answer
+news_ticker = ""
+for headline in headlines:
+    news_ticker += headline + " "
+    if len(news_ticker) >= 140:
+        news_ticker = news_ticker[:140]
+        break
+
 print(news_ticker)
